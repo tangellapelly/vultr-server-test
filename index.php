@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(1);
 require_once('config.php');
 
 $flag    = isset($_GET['flag'])?intval($_GET['flag']):0;

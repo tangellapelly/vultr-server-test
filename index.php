@@ -3,7 +3,7 @@
 
 
 // connect
-$m = new MongoClient();
+//$m = new MongoClient();
 /*
 // select a database
 $db = $m->test;

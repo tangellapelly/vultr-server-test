@@ -49,6 +49,7 @@ $cursor = $manager->executeQuery('onlinestore.products', $query);
     <title>Produts table</title>
   </head>
   <body>
+  <div class="container">
   <table class='table table-bordered'>
    <thead>
 
@@ -98,6 +99,7 @@ $cursor = $manager->executeQuery('onlinestore.products', $query);
   ?>
 
 </table>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

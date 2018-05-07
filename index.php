@@ -1,6 +1,6 @@
 <?php
-error_reporting(1);
-require_once('config.php');
+
+require_once('dbConfig.php');
 
 $flag    = isset($_GET['flag'])?intval($_GET['flag']):0;
 

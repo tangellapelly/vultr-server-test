@@ -4,19 +4,6 @@
  require 'vendor/autoload.php';
  $collection = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->test->movie;
 
- 
- print_r($collection);
-
-
-// connect
-//$m = new MongoClient();
-/*
-// select a database
-$db = $m->test;
-
-// select a collection (analogous to a relational database's table)
-$collection = $db->movie;
-
 // add a record
 $document = array( "title" => "Calvin and Hobbes", "author" => "Bill Watterson" );
 $collection->insert($document);
@@ -32,7 +19,7 @@ $cursor = $collection->find();
 foreach ($cursor as $document) {
     echo $document["title"] . "\n";
 }
-*/
+
 ?>
 
 

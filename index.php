@@ -23,6 +23,8 @@ $query = new MongoDB\Driver\Query($filter, $options);
 $cursor = $manager->executeQuery('onlinestore.products', $query);
 
 
+
+?>
 <table class='table table-bordered'>
    <thead>
 
@@ -72,4 +74,3 @@ $cursor = $manager->executeQuery('onlinestore.products', $query);
   ?>
 
 </table>
-?>

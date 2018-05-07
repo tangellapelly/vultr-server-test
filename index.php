@@ -6,10 +6,10 @@
 $m = new MongoClient();
 
 // select a database
-$db = $m->comedy;
+$db = $m->test;
 
 // select a collection (analogous to a relational database's table)
-$collection = $db->cartoons;
+$collection = $db->movie;
 
 // add a record
 $document = array( "title" => "Calvin and Hobbes", "author" => "Bill Watterson" );

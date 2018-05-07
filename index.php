@@ -4,7 +4,7 @@
 
 // connect
 $m = new MongoClient();
-
+/*
 // select a database
 $db = $m->test;
 
@@ -26,7 +26,7 @@ $cursor = $collection->find();
 foreach ($cursor as $document) {
     echo $document["title"] . "\n";
 }
-
+*/
 ?>
 
 

@@ -1,25 +1,25 @@
-<?php 
+<?php
 
-error_reporting(1);
- require 'vendor/autoload.php';
- $collection = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->test->movie;
+require_once('config.php');
 
-// add a record
-$document = array( "title" => "Calvin and Hobbes", "author" => "Bill Watterson" );
-$collection->insert($document);
+$flag    = isset($_GET['flag'])?intval($_GET['flag']):0;
 
-// add another record, with a different "shape"
-$document = array( "title" => "XKCD", "online" => true );
-$collection->insert($document);
+$message ='';
 
-// find everything in the collection
-$cursor = $collection->find();
+if($flag){
 
-/* iterate through the results
-foreach ($cursor as $document) {
-    echo $document["title"] . "\n";
-}*/
+  $message = $messages[$flag];
+
+}
+
+$filter = [];
+
+$options = [
+    'sort' => ['_id' => -1],
+];
+
+$query = new MongoDB\Driver\Query($filter, $options);
+
+$cursor = $manager->executeQuery('onlinestore.products', $query);
 
 ?>
-
-

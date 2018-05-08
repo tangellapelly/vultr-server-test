@@ -50,6 +50,28 @@ $cursor = $manager->executeQuery('onlinestore.products', $query);
   </head>
   <body>
   <div class="container">
+  <form id="form1" name='form1' action="record_add.php" method="post">
+
+<input type='hidden' name='id' id='id' value="" />
+
+ <table>
+
+ <tr>
+
+   <td><input type='text' name='product_name' id='product_name' placeholder="Product Name" /></td>
+
+   <td><input type='text' name='price' id='price' placeholder="Price" /></td>
+
+  <td><input type='text' name='category' id='category' placeholder="Category" /></td>
+
+ <td><input class='btn' type='submit' name='btn' id='btn' value="Add Records" /></td>
+
+  </tr>
+
+</table>
+
+</form>
+
   <table class='table table-bordered'>
    <thead>
 

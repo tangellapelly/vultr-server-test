@@ -1,6 +1,6 @@
 <?php
 
-  require_once('config.php');
+require_once('dbConfig.php');
 
   $product_name = '';
 

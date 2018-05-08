@@ -50,6 +50,7 @@ $cursor = $manager->executeQuery('onlinestore.products', $query);
   </head>
   <body>
   <div class="container">
+  <div class="row">
   <form id="form1" name='form1' action="record_add.php" method="post">
 
 <input type='hidden' name='id' id='id' value="" />
@@ -71,7 +72,7 @@ $cursor = $manager->executeQuery('onlinestore.products', $query);
 </table>
 
 </form>
-
+</div>
   <table class='table table-bordered'>
    <thead>
 
